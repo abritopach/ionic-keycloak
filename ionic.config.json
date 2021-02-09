@@ -1,0 +1,7 @@
+{
+  "name": "ionic-keycloak",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
