@@ -3,7 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  keycloak: {
+    // Url of the Identity Provider.
+    url: 'http://localhost:8080/auth/',
+
+    // Realm.
+    realm: 'RealmTest',
+
+    // The SPA's id.
+    // The SPA is registerd with this id at the auth-server.
+    clientId: 'ionic-keycloak',
+  }
 };
 
 /*

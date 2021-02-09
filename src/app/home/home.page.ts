@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { KeycloakService } from 'keycloak-angular';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private keycloakService: KeycloakService) {}
+
+  logout() {
+    this.keycloakService.logout();
+  }
 
 }
